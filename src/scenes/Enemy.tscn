@@ -1,0 +1,22 @@
+[gd_scene load_steps=5 format=3 uid="uid://nxjb8jyxwv6n"]
+
+[ext_resource type="Script" path="res://src/scripts/Enemy.gd" id="1_50cs7"]
+[ext_resource type="PackedScene" uid="uid://djp73v8of4ibw" path="res://src/scenes/enemy_bullet.tscn" id="2_0f3qj"]
+[ext_resource type="Texture2D" uid="uid://b4wg2tp0ucpmg" path="res://src/sprites/enemy.png" id="2_u5x85"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ablkj"]
+radius = 30.0
+
+[node name="Enemy" type="RigidBody2D"]
+script = ExtResource("1_50cs7")
+bullet_scene = ExtResource("2_0f3qj")
+health = 10
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_u5x85")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_ablkj")
+
+[node name="Muzzle" type="Marker2D" parent="."]
+position = Vector2(50, 0)
