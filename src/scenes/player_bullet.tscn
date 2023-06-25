@@ -11,7 +11,7 @@ radius = 15.0
 
 [node name="RigidBody2D" type="RigidBody2D"]
 collision_layer = 4
-collision_mask = 3
+collision_mask = 10
 gravity_scale = 0.0
 script = ExtResource("1_yugif")
 
@@ -23,7 +23,7 @@ shape = SubResource("CircleShape2D_i78fc")
 
 [node name="Hitbox" type="Area2D" parent="CollisionShape2D"]
 collision_layer = 4
-collision_mask = 3
+collision_mask = 10
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CollisionShape2D/Hitbox"]
 shape = SubResource("CircleShape2D_w04ep")

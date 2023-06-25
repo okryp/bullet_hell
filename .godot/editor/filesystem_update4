@@ -1,0 +1,11 @@
+res://src/scenes/UI.tscn
+res://src/scripts/Level.tscn
+res://src/scripts/Level.gd
+res://src/scenes/enemy_bullet.tscn
+res://src/scenes/player_bullet.tscn
+res://src/scenes/Player.tscn
+res://src/scenes/Wall.tscn
+res://src/scenes/Enemy.tscn
+res://src/scenes/enemy_bullet.gd
+res://src/scenes/player_bullet.gd
+res://src/scripts/Enemy.gd

@@ -20,7 +20,7 @@ texture_region_size = Vector2i(64, 64)
 [sub_resource type="TileSet" id="TileSet_vfdog"]
 tile_size = Vector2i(64, 64)
 physics_layer_0/collision_layer = 2
-physics_layer_0/collision_mask = 5
+physics_layer_0/collision_mask = 13
 sources/0 = SubResource("TileSetAtlasSource_qxrlj")
 
 [sub_resource type="Curve2D" id="Curve2D_np7uq"]
@@ -46,9 +46,11 @@ position = Vector2(992, 160)
 
 [node name="Player" parent="." instance=ExtResource("2_7vtmh")]
 collision_mask = 2
+health = 10
 
 [node name="Enemy" parent="." instance=ExtResource("3_0u0s8")]
 collision_mask = 2
+health = 100
 
 [node name="Path2D" type="Path2D" parent="."]
 curve = SubResource("Curve2D_np7uq")
@@ -56,8 +58,5 @@ curve = SubResource("Curve2D_np7uq")
 [node name="PathFollow2D" type="PathFollow2D" parent="Path2D"]
 position = Vector2(992, 160)
 rotation = 3.14159
-
-[node name="BossShotTimer" type="Timer" parent="."]
-wait_time = 2.0
 
 [node name="CanvasLayer" parent="." instance=ExtResource("5_8vkbw")]
