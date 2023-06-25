@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://src/scripts/Enemy.gd" id="1_50cs7"]
 [ext_resource type="PackedScene" uid="uid://djp73v8of4ibw" path="res://src/scenes/enemy_bullet.tscn" id="2_0f3qj"]
-[ext_resource type="Texture2D" uid="uid://b4wg2tp0ucpmg" path="res://src/sprites/enemy.png" id="2_u5x85"]
+[ext_resource type="Texture2D" uid="uid://cgnsdcw0o7sbl" path="res://src/sprites/cirno.png" id="3_rpwul"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ablkj"]
 radius = 30.0
@@ -15,7 +15,8 @@ bullet_scene = ExtResource("2_0f3qj")
 health = 10
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("2_u5x85")
+scale = Vector2(1.778, 1.778)
+texture = ExtResource("3_rpwul")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_ablkj")

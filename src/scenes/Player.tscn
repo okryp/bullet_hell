@@ -2,10 +2,10 @@
 
 [ext_resource type="Script" path="res://src/scripts/Player.gd" id="1_2qrbo"]
 [ext_resource type="PackedScene" uid="uid://bw5vgktaykw16" path="res://src/scenes/player_bullet.tscn" id="2_3spw7"]
-[ext_resource type="Texture2D" uid="uid://c3jxgb1qgvjsl" path="res://src/sprites/player.png" id="2_5yllj"]
+[ext_resource type="Texture2D" uid="uid://djadyru61da4c" path="res://src/sprites/mokou.png" id="3_o4o32"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_lbq6b"]
-radius = 30.0
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8eq7v"]
+size = Vector2(39, 58)
 
 [node name="Player" type="CharacterBody2D"]
 collision_mask = 6
@@ -14,10 +14,12 @@ bullet_scene = ExtResource("2_3spw7")
 health = 100
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("2_5yllj")
+scale = Vector2(1.6, 1.6)
+texture = ExtResource("3_o4o32")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("CircleShape2D_lbq6b")
+position = Vector2(-1.5, 0)
+shape = SubResource("RectangleShape2D_8eq7v")
 
 [node name="Muzzle" type="Marker2D" parent="."]
 position = Vector2(50, 0)

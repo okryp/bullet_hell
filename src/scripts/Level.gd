@@ -1,10 +1,11 @@
 extends Node
   
 var bullet_timer : int = 0
-var movement_switch_timer : int = 60
+var movement_switch_timer : int = 180
 var progress = 0.001
 
 var bosshealth_string = "BOSS HEALTH: %s"
+var playerhealth_sting = "PLAYER HELTH: %s"
 
 func game_over():
 	print("GAME OVER\n", $Enemy.health, "\t:\t", $Player.health)
@@ -28,6 +29,7 @@ func randomize_movement():
 	movement_switch_timer -= 1
 	if movement_switch_timer == 0:
 		var rand = randf_range(0, 1)
+		movement_switch_timer = 180
 		if rand > 0.5:
 			progress = 0.001
 			return progress
@@ -44,6 +46,7 @@ func _process(delta):
 		$Path2D/PathFollow2D.progress_ratio += progress
 		$Enemy.position = $Path2D/PathFollow2D.position
 		$CanvasLayer/BossHealth.text = bosshealth_string % $Enemy.health
+		$CanvasLayer/PlayerHealth.text = playerhealth_sting % $Player.health
 		
 		randomize_movement()
 		enemy_shoot()

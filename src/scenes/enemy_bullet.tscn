@@ -1,13 +1,11 @@
 [gd_scene load_steps=5 format=3 uid="uid://djp73v8of4ibw"]
 
 [ext_resource type="Script" path="res://src/scenes/enemy_bullet.gd" id="1_bkuus"]
-[ext_resource type="Texture2D" uid="uid://dkms1vaqp75oq" path="res://src/sprites/enemy_bullet.png" id="1_p58pb"]
+[ext_resource type="Texture2D" uid="uid://i1klu4ubtutf" path="res://src/sprites/New Piskel(2).png" id="2_yos2o"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_hr35m"]
-radius = 15.0
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1i4bf"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_a3sud"]
-radius = 15.0
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rqxdf"]
 
 [node name="EnemyBullet" type="RigidBody2D"]
 collision_layer = 4
@@ -16,16 +14,17 @@ gravity_scale = 0.0
 script = ExtResource("1_bkuus")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1_p58pb")
+texture = ExtResource("2_yos2o")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("CircleShape2D_hr35m")
+rotation = 0.785398
+shape = SubResource("RectangleShape2D_1i4bf")
 
 [node name="Hitbox" type="Area2D" parent="CollisionShape2D"]
 collision_layer = 4
 collision_mask = 3
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CollisionShape2D/Hitbox"]
-shape = SubResource("CircleShape2D_a3sud")
+shape = SubResource("RectangleShape2D_rqxdf")
 
 [connection signal="body_entered" from="CollisionShape2D/Hitbox" to="." method="_on_hitbox_body_entered"]
