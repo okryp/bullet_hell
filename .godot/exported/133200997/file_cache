@@ -1,0 +1,9 @@
+res://src/scenes/CollisionTestScene.tscn::e0f4f922f62f6c282a745f15d877db44::1687719126::res://.godot/exported/133200997/export-17b8c2fbcab0ce47b21970df560b594f-CollisionTestScene.scn
+res://src/scenes/Enemy.tscn::88c03ca0a9dcad919787e68b69916548::1687736798::res://.godot/exported/133200997/export-27e26b505c9797c13de85c5e13d58a44-Enemy.scn
+res://src/scenes/enemy_bullet.tscn::5eda0c630058707de19f92ece0c39c94::1687736798::res://.godot/exported/133200997/export-37af6e36d040854af9281b3a526b3a83-enemy_bullet.scn
+res://src/scenes/Player.tscn::dd513e59144cf8ce8c897b145798df00::1687736798::res://.godot/exported/133200997/export-62a27216dfa79b69fc8e1c3d6d0492cf-Player.scn
+res://src/scenes/player_bullet.tscn::760c24022d78d3a36c97ca0199d93e59::1687736798::res://.godot/exported/133200997/export-0923f0fef505cf37ae72c4b70cd06468-player_bullet.scn
+res://src/scenes/UI.tscn::16ce234b91e4841df89fcf46fbc16681::1687736798::res://.godot/exported/133200997/export-ad3d2089e9b60ea40fd382a09749c642-UI.scn
+res://src/scenes/Wall.tscn::eb52b868aa81ba20ecf781a1b90f02a4::1687736798::res://.godot/exported/133200997/export-964aaff7ddc43776212cb29f09085780-Wall.scn
+res://src/scripts/Level.tscn::330c4123598574e91e7455484846e508::1687736836::res://.godot/exported/133200997/export-c69aab75de496fe78b5b3999b652b7bb-Level.scn
+res://default_env.tres::756de160834ef7cc033c2a79cd80f338::1687719126::res://.godot/exported/133200997/export-7cf3fd67ad9f55210191d77b582b8209-default_env.res
